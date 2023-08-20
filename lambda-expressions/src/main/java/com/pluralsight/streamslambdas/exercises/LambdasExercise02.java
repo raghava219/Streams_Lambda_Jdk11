@@ -10,6 +10,7 @@ import com.pluralsight.streamslambdas.Product;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class LambdasExercise02 {
 
@@ -36,6 +37,9 @@ public class LambdasExercise02 {
                 result.add(product);
             }
         }
+
+        // Following is another way of writing for loop in Java8
+        List<Product> resultList = products.stream().filter(p1 -> p1.getCategory().equals(category)).collect(Collectors.toList());
 
         return result;
     }

@@ -39,6 +39,7 @@ public class BasicStreamsExample04 {
         System.out.println("Are all products cheap? " + allProductsAreCheap);
 
         // noneMatch() returns the opposite of anyMatch()
+        // To check if none of the elements of the stream match specific criteria, use noneMatch()
         boolean allProductsAreExpensive = products.stream()
                 .noneMatch(product -> product.getPrice().compareTo(priceLimit) < 0);
         System.out.println("Are all products expensive? " + allProductsAreExpensive);

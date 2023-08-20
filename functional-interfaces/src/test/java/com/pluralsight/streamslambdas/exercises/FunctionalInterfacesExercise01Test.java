@@ -23,6 +23,6 @@ class FunctionalInterfacesExercise01Test {
 
         assertThat(exercise.filterProducts(TestData.getProducts(), (Predicate<Product>) product -> product.getCategory() != FOOD))
                 .describedAs("Exercise 2: When searching for non-FOOD products, only those should be returned.")
-                .containsExactly(PENCILS, PLATES, DETERGENT);
+                .containsExactly(PENCILS, PLATES, DETERGENT, TELEVISION);
     }
 }

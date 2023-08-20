@@ -24,6 +24,8 @@ public class BasicStreamsExample01 {
             return product;
         });
 
+        System.out.println("---------------");
+
         // When you call a terminal operation, the stream will do the work
         stream.forEach(product -> {});
     }

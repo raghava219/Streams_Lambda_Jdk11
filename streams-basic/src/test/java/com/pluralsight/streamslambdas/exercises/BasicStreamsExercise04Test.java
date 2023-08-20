@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class BasicStreamsExercise04Test {
 
-    private static final List<Product> TEST_PRODUCTS_1 = List.of(PENCILS, DISH_BRUSH, PLATES, SCOURER, SPAGHETTI, FORKS, DETERGENT);
+    private static final List<Product> TEST_PRODUCTS_1 = List.of(PENCILS, DISH_BRUSH, APPLES, PLATES, SCOURER, SPAGHETTI, FORKS, DETERGENT);
     private static final List<Product> TEST_PRODUCTS_2 = List.of(PENCILS, PLATES, SPAGHETTI, FORKS);
 
     private BasicStreamsExercise04 exercise = new BasicStreamsExercise04();

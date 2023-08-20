@@ -5,6 +5,7 @@ import com.pluralsight.streamslambdas.Product;
 
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class BasicStreamsExercise02 {
@@ -25,13 +26,17 @@ public class BasicStreamsExercise02 {
         //
         // Hint: Use the API documentation of interface java.util.stream.Stream.
 
-//        return products.stream()...;
+        return products.stream()
+                .filter( product -> product.getCategory().equals(category))
+                .map(product -> product.getName())
+                .collect(Collectors.toList());
 
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+        // throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
     }
 
     /**
-     * Exercise 2b: Given a map that contains products grouped by category and a stream of categories, get the names of the products
+     * Exercise 2b: Given a map that contains products grouped by category and a stream of categories,
+     * get the names of the products
      * for each category in that stream and return all the products in a list.
      *
      * @param productsByCategory A map containing products grouped by category.
@@ -46,8 +51,10 @@ public class BasicStreamsExercise02 {
         //
         // Hint: You'll need to use different mapping methods.
 
-//        return categories...;
+         /*return categories.forEach(category -> productsByCategory.get(category))
+                 .map(product -> product.get(category))
+                 .flatMap(Product::getName).collect(Collectors.toList());*/
 
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+         throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
     }
 }

@@ -25,9 +25,13 @@ public class LambdasExercise03 {
     public ShoppingCartFactory getShoppingCartFactory() {
         // TODO: Implement interface ShoppingCartFactory by using a method reference
         // Note: Don't implement ShoppingCartFactory with an anonymous class
-        ShoppingCartFactory factory = ShoppingCart::new;
-        Product product = factory.newShoppingCart();
-        return ; // Replace 'null' by your solution
+        return new ShoppingCartFactory() {
+            @Override
+            public ShoppingCart newShoppingCart() {
+
+                return null;
+            }
+        }; // Replace 'null' by your solution
     }
 
     public static class ShoppingCart {
@@ -46,7 +50,7 @@ public class LambdasExercise03 {
             BigDecimal total = BigDecimal.ZERO;
 
             // TODO: This solution does not work. Can you explain why?
-//            products.forEach(product -> total.add(product.getPrice()));
+            products.forEach(product -> total.add(product.getPrice()));
 
             // TODO: Implement this method in whatever way you like (you don't have to use lambda expressions)
 

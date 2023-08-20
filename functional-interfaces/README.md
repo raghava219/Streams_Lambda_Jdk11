@@ -16,18 +16,23 @@ In this module, you'll learn:
 
 ### Examples
 
-Take a look at the examples from the demos in the course, which you can find in the package: `com.pluralsight.streamslambdas.examples`.
+Take a look at the examples from the demos in the course, which you can find in the package: 
+`com.pluralsight.streamslambdas.examples`.
 
 ### Exercises
 
-To really learn any subject, it's not enough to read a website, book or watch videos. You'll have to work with the subject yourself!
+To really learn any subject, it's not enough to read a website, book or watch videos. 
+You'll have to work with the subject yourself!
 
-To help you practice with streams and lambda expressions, there are exercises included, which you can find in the package: `com.pluralsight.streamslambdas.exercises`.
+To help you practice with streams and lambda expressions, there are exercises included, 
+which you can find in the package: `com.pluralsight.streamslambdas.exercises`.
 
-To check if you have done the exercises correctly, you can run the included unit tests. You can find the tests in the directory `src/test/java`,
+To check if you have done the exercises correctly, you can run the included unit tests. 
+You can find the tests in the directory `src/test/java`,
 package `com.pluralsight.streamslambdas.exercises`.
 
-An IDE such as IntelliJ will make it easy to run the tests: in the Project view (on the left side), right-click one of the test classes (such
+An IDE such as IntelliJ will make it easy to run the tests: in the Project view (on the left side), 
+right-click one of the test classes (such
 as `FunctionalInterfacesExercise01Test`) and click "Run 'FunctionalInterfacesExercise01Test'" from the popup menu.
 
 ### Running on the command line

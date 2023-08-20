@@ -1,5 +1,6 @@
 package com.pluralsight.streamslambdas.exercises;
 
+import com.pluralsight.streamslambdas.Category;
 import com.pluralsight.streamslambdas.Product;
 
 import java.util.List;
@@ -20,8 +21,10 @@ public class BasicStreamsExercise04 {
         // Hint: Use a terminal operation to find the cheapest product.
         // Look at the API documentation of interface java.util.stream.Stream, find out which operation would be suitable.
 
-//        return products.stream()...;
-
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+        return products.stream()
+                .filter(product -> product.getCategory() ==  Category.CLEANING)
+                .sorted((p1,p2) -> p1.getPrice().compareTo(p2.getPrice()))
+                .findFirst();
+        // throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
     }
 }

@@ -18,12 +18,15 @@ public class FunctionalInterfacesExample03 {
 
     // Go through a list of products, and return the first product for which the predicate returns true.
     static Optional<Product> findProduct(List<Product> products, Predicate<Product> predicate) {
+
         for (Product product : products) {
             if (predicate.test(product)) {
                 return Optional.of(product);
             }
         }
+
         return Optional.empty();
+
     }
 
     public static void main(String[] args) {

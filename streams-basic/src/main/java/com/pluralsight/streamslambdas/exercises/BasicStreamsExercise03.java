@@ -5,6 +5,7 @@ import com.pluralsight.streamslambdas.Product;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class BasicStreamsExercise03 {
 
@@ -21,8 +22,9 @@ public class BasicStreamsExercise03 {
         //
         // Hint: You'll need to add two stream operations.
 
-//        return products.stream()...;
+        return products.stream()
+                .filter(product -> product.getPrice().compareTo(priceLimit) < 0).findAny();
 
-        throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
+        // throw new UnsupportedOperationException("Not yet implemented"); // Remove this line
     }
 }

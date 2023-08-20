@@ -24,6 +24,14 @@ public class LambdasExample03 {
                 System.out.println(product);
             }
         }
+
+        // Following is another way of writing
+        products.forEach( product -> {
+            if(filter.accept(product)) {
+                System.out.println(product);
+            }
+        });
+
     }
 
     public static void main(String[] args) {

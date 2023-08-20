@@ -9,5 +9,6 @@ public enum Category {
     FOOD,
     UTENSILS,
     CLEANING,
-    OFFICE
+    OFFICE,
+    HOME
 }

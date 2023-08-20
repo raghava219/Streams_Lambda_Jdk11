@@ -16,8 +16,8 @@ public class TestData {
     public static final Product SPAGHETTI = new Product(FOOD, "Spaghetti", new BigDecimal("2.79"));
     public static final Product COFFEE = new Product(FOOD, "Coffee", new BigDecimal("7.49"));
     public static final Product DETERGENT = new Product(CLEANING, "Detergent", new BigDecimal("3.79"));
-
-    private static final List<Product> PRODUCTS = List.of(PENCILS, APPLES, PLATES, SPAGHETTI, COFFEE, DETERGENT);
+    public static final Product TELEVISION  = new Product(HOME, "Television", new BigDecimal("34.2"));
+    private static final List<Product> PRODUCTS = List.of(PENCILS, APPLES, PLATES, SPAGHETTI, COFFEE, DETERGENT, TELEVISION);
 
     public static List<Product> getProducts() {
         return new ArrayList<>(PRODUCTS);
